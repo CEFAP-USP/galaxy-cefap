@@ -1,0 +1,14 @@
+paths: 
+  # Use transfer (or remote_transfer) if only Galaxy mounts a directory.
+  # - path: /galaxy/files/store/1
+  #   action: transfer
+
+  # Use copy (or remote_copy) if remote Pulsar server also mounts the directory
+  # but the actual compute servers do not.
+  # - path: /galaxy/files/store/2
+  #   action: copy
+
+  # If Galaxy, the Pulsar, and the compute nodes all mount the same directory
+  # staging can be disabled altogether for given paths.
+  - path: /galaxy-central/database/files
+    action: none
