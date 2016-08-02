@@ -52,37 +52,57 @@ tools:
 # Cuffcompare
 - name: cuffcompare
   owner: devteam
-  tool_panel_section_label: Cufflinks
+  tool_panel_section_label: RNASeq
 
 # Cuffdiff
 - name: cuffdiff
   owner: devteam
-  tool_panel_section_label: Cufflinks
+  tool_panel_section_label: RNASeq
 
 # Cufflinks
 - name: cufflinks
   owner: devteam
-  tool_panel_section_label: Cufflinks
+  tool_panel_section_label: RNASeq
 
 # Cuffmerge
 - name: cuffmerge
   owner: devteam
-  tool_panel_section_label: Cufflinks
+  tool_panel_section_label: RNASeq
 
 # Cuffnorm
 - name: cuffnorm
   owner: devteam
-  tool_panel_section_label: Cufflinks
+  tool_panel_section_label: RNASeq
 
 # CummeRbund
 - name: cummerbund
   owner: devteam
-  tool_panel_section_label: CummeRbund
+  tool_panel_section_label: RNASeq
+
+# Tophat - fast splice junction mapper for RNA-Seq reads
+- name: tophat2
+  owner: devteam
+  tool_panel_section_label: RNASeq
+
+# StringTie is a fast and highly efficient assembler of RNA-Seq alignments into potential transcripts.
+- name: stringtie
+  owner: iuc
+  tool_panel_section_label: RNASeq
+
+# Trinity (from the Trinity tool suite)
+- name: trinity
+  owner: iuc
+  tool_panel_section_label: RNASeq
+
+# TransDecoder finds coding regions within transcripts
+- name: transdecoder
+  owner: iuc
+  tool_panel_section_label: RNASeq
 
 # Extract Genomic DNA
 - name: extract_genomic_dna
   owner: iuc
-  tool_panel_section_label: 'Fetch Sequences'
+  tool_panel_section_id: 'fetchSeq' # Fetch Sequences
 
 # Fasta Clipping histogram
 - name: fasta_clipping_histogram
@@ -182,22 +202,22 @@ tools:
 # FASTQ to FASTA converter
 - name: fastq_to_fasta
   owner: devteam
-  tool_panel_section_label: 'Convert Formats'
+  tool_panel_section_id: 'convert'
 
 # FASTQ to FASTA converter
 - name: fastq_to_fasta
   owner: devteam
-  tool_panel_section_label: 'Convert Formats'
+  tool_panel_section_id: 'convert'
 
 # FASTQ to FASTA converter
 - name: fastq_to_fasta_python
   owner: devteam
-  tool_panel_section_label: 'Convert Formats'
+  tool_panel_section_id: 'convert'
 
 # Tabular-to-FASTA
 - name: tabular_to_fasta
   owner: devteam
-  tool_panel_section_label: 'Convert Formats'
+  tool_panel_section_id: 'convert'
 
 # Read QC reports using FastQC
 - name: fastqc
@@ -207,42 +227,27 @@ tools:
 # Fetch closest non-overlapping feature for every interval
 - name: flanking_features
   owner: devteam
-  tool_panel_section_label: 'Join, Subtract and Group'
+  tool_panel_section_id: 'group'
 
 # Intersect the intervals of two datasets
 - name: intersect
   owner: devteam
-  tool_panel_section_label: 'Join, Subtract and Group'
+  tool_panel_section_id: 'group'
 
 # Merge the overlapping intervals of a dataset
 - name: merge
   owner: devteam
-  tool_panel_section_label: 'Join, Subtract and Group'
+  tool_panel_section_id: 'group'
 
 # Subtract the intervals of two datasets
 - name: subtract
   owner: devteam
-  tool_panel_section_label: 'Join, Subtract and Group'
+  tool_panel_section_id: 'group'
 
 # A suite of Galaxy utilities associated with version 0.0.13 of the FASTX-Toolkit package.
 - name: suite_fastx_toolkit_0_0_13
   owner: devteam
-  tool_panel_section_label: 'Join, Subtract and Group'
-
-# MIRA 4.0 assembler
-- name: mira4_assembler
-  owner: peterjc
-  tool_panel_section_label: Assembly
-
-# Assemble with MIRA v3. Takes Sanger, Roche, and Illumina data
-- name: mira_assembler
-  owner: peterjc
-  tool_panel_section_label: Assembly
-
-# Defines 'mira' datatype for the MIRA Assembly Format
-- name: mira_datatypes
-  owner: peterjc
-  tool_panel_section_label: Assembly
+  tool_panel_section_id: 'group'
 
 # Against miRBase repository
 - name: miraligner
@@ -257,11 +262,6 @@ tools:
 # Identification of novel and known miRNAs
 - name: mirdeep2
   owner: rnateam
-  tool_panel_section_label: miRNA
-
-# Finding miRNA in NGS data and finding the targets for those miRNA 
-- name: mirdeep2_and_targetspy_dh
-  owner: david-hoover
   tool_panel_section_label: miRNA
 
 # MiRDeep2 Mapper - process and map reads to a reference genome 
@@ -279,12 +279,12 @@ tools:
   owner: rnateam
   tool_panel_section_label: miRNA
 
-# Tophat - fast splice junction mapper for RNA-Seq reads
-- name: tophat2
-  owner: devteam
-  tool_panel_section_label: Tophat
-
 # Bed tools
 - name: bedtools
   owner: iuc
   tool_panel_section_label: 'BED tools'
+
+# Use python regular expressions to find and replace text
+- name: regex_find_replace
+  owner: jjohnson
+  tool_panel_section_id: 'textutil'
