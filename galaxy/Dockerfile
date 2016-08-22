@@ -34,6 +34,10 @@ RUN install-tools $GALAXY_ROOT/tools.yaml
 # Install needed package
 RUN . $GALAXY_VIRTUAL_ENV/bin/activate; pip install --ignore-installed pycurl
 
+# Install needed modules
+RUN cpan App::cpanminus
+RUN cpanm URI::Escape
+
 # Copy web files to new directory
 ADD web /export/web
 ADD web $GALAXY_CONFIG_DIR/web/
