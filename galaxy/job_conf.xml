@@ -97,14 +97,14 @@
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
         </destination>
 
-        <!-- <destination id="pulsar_mob3" runner="pulsar_rest" tags="soft_jobs">
+        <destination id="pulsar_mob3" runner="pulsar_rest" tags="soft_jobs">
             <param id="url">http://10.1.1.109:8914/managers/queue/</param>
             <param id="default_file_action">none</param>
             <param id="file_action_config">config/pulsar_actions.yaml</param>
             <param id="remote_metadata">false</param>
             <param id="use_remote_datatypes">false</param>
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
-        </destination> -->
+        </destination>
 
         <!--                       HARD JOBS                             -->
 
@@ -171,25 +171,25 @@
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
         </destination>
 
-        <!-- <destination id="pulsar_mob3_hard" runner="pulsar_rest" tags="hard_jobs">
+        <destination id="pulsar_mob3_hard" runner="pulsar_rest" tags="hard_jobs">
             <param id="url">http://10.1.1.109:8914/managers/queue/</param>
             <param id="default_file_action">none</param>
             <param id="file_action_config">config/pulsar_actions.yaml</param>
             <param id="remote_metadata">false</param>
             <param id="use_remote_datatypes">false</param>
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
-        </destination> -->
+        </destination>
 
         <destination id="balance_pulsar" runner="dynamic">
             <param id="type">choose_one</param>
             <param id="destination_ids">pulsar_mob0</param>
-            <!-- <param id="destination_ids">pulsar_jfno00,pulsar_jfno01,pulsar_jfno02,pulsar_jfno03,pulsar_lobster,pulsar_mob0,pulsar_mob1,pulsar_mob2</param> -->
+            <!-- <param id="destination_ids">pulsar_jfno00,pulsar_jfno01,pulsar_jfno02,pulsar_jfno03,pulsar_lobster,pulsar_mob0,pulsar_mob1,pulsar_mob2,pulsar_mob3</param> -->
         </destination>
 
         <destination id="balance_pulsar_hard" runner="dynamic">
             <param id="type">choose_one</param>
             <param id="destination_ids">pulsar_mob0_hard</param>
-            <!-- <param id="destination_ids">pulsar_jfno00_hard,pulsar_jfno01_hard,pulsar_jfno02_hard,pulsar_lobster_hard,pulsar_mob0,pulsar_mob1,pulsar_mob2</param> -->
+            <!-- <param id="destination_ids">pulsar_jfno00_hard,pulsar_jfno01_hard,pulsar_jfno02_hard,pulsar_lobster_hard,pulsar_mob0_hard,pulsar_mob1_hard,pulsar_mob2_hard,pulsar_mob3_hard</param> -->
         </destination>
 
         <!-- ####################################################### 
@@ -262,13 +262,13 @@
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
         </destination>
 
-        <!-- <destination id="pulsar_mob3_ft" runner="pulsar_rest" tags="soft_jobs">
+        <destination id="pulsar_mob3_ft" runner="pulsar_rest" tags="soft_jobs">
             <param id="url">http://10.1.1.109:8914/managers/queue/</param>
             <param id="default_file_action">transfer</param>
             <param id="remote_metadata">True</param>
             <param id="use_remote_datatypes">false</param>
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
-        </destination> -->
+        </destination>
 
         <!--                       HARD JOBS                             -->
 
@@ -296,13 +296,13 @@
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
         </destination>
 
-        <!-- <destination id="pulsar_jfno03_ft_hard" runner="pulsar_rest" tags="hard_jobs">
+        <destination id="pulsar_jfno03_ft_hard" runner="pulsar_rest" tags="hard_jobs">
             <param id="url">http://10.1.1.103:8914/managers/queue/</param>
             <param id="default_file_action">transfer</param>
             <param id="remote_metadata">True</param>
             <param id="use_remote_datatypes">false</param>
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
-        </destination> -->
+        </destination>
 
         <destination id="pulsar_lobster_ft_hard" runner="pulsar_rest" tags="hard_jobs">
             <param id="url">http://10.1.1.104:8914/managers/queue/</param>
@@ -336,24 +336,24 @@
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
         </destination>
 
-        <!-- <destination id="pulsar_mob3_ft_hard" runner="pulsar_rest" tags="hard_jobs">
+        <destination id="pulsar_mob3_ft_hard" runner="pulsar_rest" tags="hard_jobs">
             <param id="url">http://10.1.1.109:8914/managers/queue/</param>
             <param id="default_file_action">transfer</param>
             <param id="remote_metadata">True</param>
             <param id="use_remote_datatypes">false</param>
             <param id="remote_property_galaxy_home">/mnt/galaxy</param>
-        </destination> -->
+        </destination>
 
         <destination id="balance_pulsar_ft" runner="dynamic">
             <param id="type">choose_one</param>
             <param id="destination_ids">pulsar_mob0_ft</param>
-            <!-- <param id="destination_ids">pulsar_jfno00_ft,pulsar_jfno01_ft,pulsar_jfno02_ft,pulsar_jfno03_ft,pulsar_lobster_ft,pulsar_mob0_ft,pulsar_mob1_ft,pulsar_mob2_ft</param> -->
+            <!-- <param id="destination_ids">pulsar_jfno00_ft,pulsar_jfno01_ft,pulsar_jfno02_ft,pulsar_jfno03_ft,pulsar_lobster_ft,pulsar_mob0_ft,pulsar_mob1_ft,pulsar_mob2_ft,pulsar_mob3_ft</param> -->
         </destination>
 
         <destination id="balance_pulsar_ft_hard" runner="dynamic">
             <param id="type">choose_one</param>
             <param id="destination_ids">pulsar_mob0_ft_hard</param>
-            <!-- <param id="destination_ids">pulsar_jfno00_ft_hard,pulsar_jfno01_ft_hard,pulsar_jfno02_ft_hard,pulsar_lobster_ft_hard,pulsar_mob0_ft_hard,pulsar_mob1_ft_hard,pulsar_mob2_ft_hard</param> -->
+            <!-- <param id="destination_ids">pulsar_jfno00_ft_hard,pulsar_jfno01_ft_hard,pulsar_jfno02_ft_hard,pulsar_lobster_ft_hard,pulsar_mob0_ft_hard,pulsar_mob1_ft_hard,pulsar_mob2_ft_hard,pulsar_mob3_ft_hard</param> -->
         </destination>
     
     </destinations>
@@ -368,6 +368,8 @@
 
         <tool id="upload1" destination="local"/>
         <tool id='__SET_METADATA__' destination="local" />
+        <tool id='__EXPORT_HISTORY__' destination="local" />
+        <tool id='__IMPORT_HISTORY__' destination="local" />
         <tool id='ucsc_table_direct1' destination="local" />
         <tool id='ucsc_table_direct_archaea1' destination="local" />
         <tool id='ebi_sra_main' destination="local" />
@@ -376,12 +378,13 @@
         <tool id='toolshed.g2.bx.psu.edu/repos/devteam/subtract/gops_subtract_1/1.0.0' destination="balance_pulsar" />
         <tool id='toolshed.g2.bx.psu.edu/repos/iuc/extract_genomic_dna/Extract genomic DNA 1/3.0.2' destination="local" />
         <tool id='toolshed.g2.bx.psu.edu/repos/devteam/cummerbund/cummeRbund/1.0.1' destination="local" />
+        <tool id='toolshed.g2.bx.psu.edu/repos/devteam/data_manager_bowtie2_index_builder/bowtie2_index_builder_data_manager/2.2.6' destination="local" />
 
-	<tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffmerge/cuffmerge/2.2.1.0' destination="balance_pulsar_ft_hard" />
-	<tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffcompare/cuffcompare/2.2.1.0' destination="balance_pulsar_ft_hard" />
-	<tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffnorm/cuffnorm/2.2.1.1' destination="balance_pulsar_ft_hard" />
-	<tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffdiff/cuffdiff/2.2.1.3' destination="balance_pulsar_ft_hard" />
-	<tool id='toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/2.2.1.0' destination="balance_pulsar_ft_hard" />
+        <tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffmerge/cuffmerge/2.2.1.0' destination="balance_pulsar_ft_hard" />
+        <tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffcompare/cuffcompare/2.2.1.0' destination="balance_pulsar_ft_hard" />
+        <tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffnorm/cuffnorm/2.2.1.1' destination="balance_pulsar_ft_hard" />
+        <tool id='toolshed.g2.bx.psu.edu/repos/devteam/cuffdiff/cuffdiff/2.2.1.3' destination="balance_pulsar_ft_hard" />
+        <tool id='toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/2.2.1.0' destination="balance_pulsar_ft_hard" />
     </tools>
 
     <limits>
