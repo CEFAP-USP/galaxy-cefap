@@ -7,7 +7,7 @@ FROM quay.io/bgruening/galaxy:16.04
 MAINTAINER Geinfo, geninfo@icb.usp.br
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update && \
-    apt-get install --no-install-recommends -y wget libcairo2-dev libcurl4-openssl-dev && \
+    apt-get install --no-install-recommends -y wget libcairo2-dev libcurl4-openssl-dev libgd2-xpm-dev build-essential && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV GALAXY_CONFIG_BRAND=CEFAP \
@@ -37,6 +37,8 @@ RUN . $GALAXY_VIRTUAL_ENV/bin/activate; pip install --ignore-installed pycurl
 # Install needed modules
 RUN cpan App::cpanminus
 RUN cpanm URI::Escape
+RUN cpanm GD::Graph::bars
+RUN cpanm PerlIO::gzip
 
 # Copy web files to new directory
 ADD web /export/web
