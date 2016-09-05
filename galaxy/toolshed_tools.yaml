@@ -279,6 +279,11 @@ tools:
   owner: rnateam
   tool_panel_section_label: miRNA
 
+# MIRA 4.0 assembler 
+- name: mira4_assembler 
+  owner: peterjc
+  tool_panel_section_label: miRNA
+
 # Bed tools
 - name: bedtools
   owner: iuc
