@@ -7,7 +7,7 @@ FROM quay.io/bgruening/galaxy:16.04
 MAINTAINER Geinfo, geninfo@icb.usp.br
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update && \
-    apt-get install --no-install-recommends -y wget libcairo2-dev libcurl4-openssl-dev && \
+    apt-get install --no-install-recommends -y wget libcairo2-dev libcurl4-openssl-dev aufs-tools && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV GALAXY_CONFIG_BRAND=CEFAP \
