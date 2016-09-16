@@ -205,11 +205,6 @@ tools:
   tool_panel_section_id: 'convert'
 
 # FASTQ to FASTA converter
-- name: fastq_to_fasta
-  owner: devteam
-  tool_panel_section_id: 'convert'
-
-# FASTQ to FASTA converter
 - name: fastq_to_fasta_python
   owner: devteam
   tool_panel_section_id: 'convert'
