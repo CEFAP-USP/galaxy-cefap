@@ -1,8 +1,8 @@
 # Galaxy - CEFAP
 #
-# VERSION       1.0.1
+# VERSION       1.2
 
-FROM quay.io/bgruening/galaxy:16.04 
+FROM quay.io/bgruening/galaxy:16.07 
 
 MAINTAINER Geinfo, geninfo@icb.usp.br
 
