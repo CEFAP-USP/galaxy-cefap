@@ -2,7 +2,7 @@
 #
 # VERSION       1.0.1
 
-FROM quay.io/bgruening/galaxy:16.04 
+FROM quay.io/bgruening/galaxy:16.07 
 
 MAINTAINER Geinfo, geninfo@icb.usp.br
 

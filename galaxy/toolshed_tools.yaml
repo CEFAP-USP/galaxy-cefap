@@ -94,6 +94,11 @@ tools:
   owner: iuc
   tool_panel_section_label: RNASeq
 
+# Trinity tools to assemble transcript sequences from Illumina RNA-Seq data.
+- name: suite_trinity
+  owner: iuc
+  tool_panel_section_label: RNASeq
+
 # TransDecoder finds coding regions within transcripts
 - name: transdecoder
   owner: iuc
@@ -201,16 +206,6 @@ tools:
 
 # FASTQ to FASTA converter
 - name: fastq_to_fasta
-  owner: devteam
-  tool_panel_section_id: 'convert'
-
-# FASTQ to FASTA converter
-- name: fastq_to_fasta
-  owner: devteam
-  tool_panel_section_id: 'convert'
-
-# FASTQ to FASTA converter
-- name: fastq_to_fasta_python
   owner: devteam
   tool_panel_section_id: 'convert'
 
