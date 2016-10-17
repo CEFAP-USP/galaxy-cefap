@@ -201,7 +201,7 @@ tools:
 
 # cd-hit - reduce a collection of sequences to a representative sample
 - name: cdhit
-  owner: jjohnson
+  owner: bebatut
   tool_panel_section_label: 'Sequence Manipulation'
 
 # FASTQ to FASTA converter
