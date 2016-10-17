@@ -1,6 +1,6 @@
 # Galaxy - CEFAP
 #
-# VERSION       1.2
+# VERSION       1.2.1
 
 FROM quay.io/bgruening/galaxy:16.07 
 
